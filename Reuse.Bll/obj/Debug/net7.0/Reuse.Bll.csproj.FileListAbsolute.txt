@@ -1,0 +1,17 @@
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\bin\Debug\net7.0\Reuse.Bll.deps.json
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\bin\Debug\net7.0\Reuse.Bll.runtimeconfig.json
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\bin\Debug\net7.0\Reuse.Bll.dll
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\bin\Debug\net7.0\Reuse.Bll.pdb
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\bin\Debug\net7.0\Reuse.DAL.dll
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\bin\Debug\net7.0\Reuse.DAL.pdb
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\obj\Debug\net7.0\Reuse.Bll.csproj.AssemblyReference.cache
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\obj\Debug\net7.0\Reuse.Bll.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\obj\Debug\net7.0\Reuse.Bll.AssemblyInfoInputs.cache
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\obj\Debug\net7.0\Reuse.Bll.AssemblyInfo.cs
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\obj\Debug\net7.0\Reuse.Bll.csproj.CoreCompileInputs.cache
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\obj\Debug\net7.0\Reuse.Bll.csproj.CopyComplete
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\obj\Debug\net7.0\Reuse.Bll.dll
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\obj\Debug\net7.0\refint\Reuse.Bll.dll
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\obj\Debug\net7.0\Reuse.Bll.pdb
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\obj\Debug\net7.0\Reuse.Bll.genruntimeconfig.cache
+C:\MyWorkSpace\ReuseProject\Reuse.Bll\obj\Debug\net7.0\ref\Reuse.Bll.dll

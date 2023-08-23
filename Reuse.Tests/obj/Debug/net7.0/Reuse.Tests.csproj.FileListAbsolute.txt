@@ -1,0 +1,14 @@
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\bin\Debug\net7.0\Reuse.Tests.deps.json
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\bin\Debug\net7.0\Reuse.Tests.runtimeconfig.json
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\bin\Debug\net7.0\Reuse.Tests.dll
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\bin\Debug\net7.0\Reuse.Tests.pdb
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.csproj.AssemblyReference.cache
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.AssemblyInfoInputs.cache
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.AssemblyInfo.cs
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.csproj.CoreCompileInputs.cache
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.dll
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\refint\Reuse.Tests.dll
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.pdb
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.genruntimeconfig.cache
+C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\ref\Reuse.Tests.dll
