@@ -9,7 +9,7 @@ namespace Reuse.Bll.DTO
 {
     public class TaxRateDTO
     {
-        public int TaxRateId { get; set;; }
+        public int TaxRateId { get; set; }
         public string TaxRateName { get; set; } = string.Empty;
         public bool IsActive { get; set; }
 
