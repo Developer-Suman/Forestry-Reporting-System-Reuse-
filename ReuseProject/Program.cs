@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Net.Http.Headers;
 using Reuse.Bll.DTO;
+using Reuse.Bll.Helpher;
 using Reuse.Bll.Repository.Implementation;
 using Reuse.Bll.Repository.Interface;
 using Reuse.Bll.Service.Implementation;
@@ -108,6 +109,11 @@ builder.Services.AddScoped<IFinancialStatementServices, FinancialStatementServic
 builder.Services.AddScoped<IBlackListServices, BlacklistServices>();
 builder.Services.AddScoped<IAuthorizationHandler, BlackListedTokenHandeler>();
 builder.Services.AddAuthorization();
+
+//helpher class
+builder.Services.AddScoped<NepaliDateHelpher>();
+builder.Services.AddScoped<FiscalYearHelpher>();
+builder.Services.AddScoped<UniCodeHelpher>();
 
 
 builder.Services.AddAuthorization(options =>
