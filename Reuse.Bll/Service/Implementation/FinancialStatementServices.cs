@@ -65,6 +65,7 @@ namespace Reuse.Bll.Service.Implementation
 
                 }
 
+
                 financialStatementDTO.ApplicationEnglishDate = _nepaliDateHelpher.ReturnNullOrDate(financialStatementDTO.ApplicationNepaliDate);
                 financialStatementDTO.VerifiedEnglishDate = _nepaliDateHelpher.ReturnNullOrDate(financialStatementDTO.VerifiedNepaliDate);
                 financialStatementDTO.BranchId = _branchId;
