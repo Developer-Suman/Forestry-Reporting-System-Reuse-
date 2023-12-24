@@ -29,27 +29,5 @@ namespace Reuse.DAL.Data
         }
 
 
-
-        //public static void SeedRoles(IServiceProvider serviceProvider)
-        //{
-        //    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-
-        //    SeedRole(roleManager, "Admin");
-        //    SeedRole(roleManager, "User");
-        //}
-
-        //private static void SeedRole(RoleManager<IdentityRole> roleManager, string roleName)
-        //{
-        //    if(!roleManager.RoleExistsAsync(roleName).Result)
-        //    {
-        //        var role = new IdentityRole { Name = roleName};
-        //        var result = roleManager.CreateAsync(role).Result;
-        //        if(!result.Succeeded)
-        //        {
-        //            Console.WriteLine("Role Added Sucessfully");
-        //        }
-
-        //    }
-        //}
     }
 }

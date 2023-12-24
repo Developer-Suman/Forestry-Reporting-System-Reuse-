@@ -3698,11 +3698,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MyWorkSpace\\ReuseProject\\Reuse.Tests\\Reuse.Tests.csproj",
+      "projectUniqueName": "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.Tests\\Reuse.Tests.csproj",
       "projectName": "Reuse.Tests",
-      "projectPath": "C:\\MyWorkSpace\\ReuseProject\\Reuse.Tests\\Reuse.Tests.csproj",
+      "projectPath": "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.Tests\\Reuse.Tests.csproj",
       "packagesPath": "C:\\Users\\suman\\.nuget\\packages\\",
-      "outputPath": "C:\\MyWorkSpace\\ReuseProject\\Reuse.Tests\\obj\\",
+      "outputPath": "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\suman\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3713,6 +3713,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

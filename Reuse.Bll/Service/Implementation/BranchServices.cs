@@ -106,7 +106,7 @@ namespace Reuse.Bll.Service.Implementation
         {
             try
             {
-                if(!await _repository.AnyAsync())
+                if(await _repository.AnyAsync())
                 {
                     return new ServiceResult<BranchDTO>(true);
                 }

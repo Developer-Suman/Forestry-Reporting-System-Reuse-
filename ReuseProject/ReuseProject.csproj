@@ -24,7 +24,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Reuse.Bll\Reuse.Bll.csproj" />
     <ProjectReference Include="..\Reuse.DAL\Reuse.DAL.csproj" />
-    <ProjectReference Include="..\Reuse.Tests\Reuse.Tests.csproj" />
   </ItemGroup>
 
 </Project>

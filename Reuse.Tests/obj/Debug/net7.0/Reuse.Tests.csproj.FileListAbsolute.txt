@@ -12,3 +12,17 @@ C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\refint\Reuse.Tests.dll
 C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.pdb
 C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.genruntimeconfig.cache
 C:\MyWorkSpace\ReuseProject\Reuse.Tests\obj\Debug\net7.0\ref\Reuse.Tests.dll
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\bin\Debug\net7.0\Reuse.Tests.deps.json
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\bin\Debug\net7.0\Reuse.Tests.runtimeconfig.json
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\bin\Debug\net7.0\Reuse.Tests.dll
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\bin\Debug\net7.0\Reuse.Tests.pdb
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.csproj.AssemblyReference.cache
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.AssemblyInfoInputs.cache
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.AssemblyInfo.cs
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.csproj.CoreCompileInputs.cache
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.dll
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\obj\Debug\net7.0\refint\Reuse.Tests.dll
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.pdb
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\obj\Debug\net7.0\Reuse.Tests.genruntimeconfig.cache
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\Reuse.Tests\obj\Debug\net7.0\ref\Reuse.Tests.dll

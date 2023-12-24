@@ -1466,23 +1466,6 @@
         "runtime": {
           "bin/placeholder/Reuse.DAL.dll": {}
         }
-      },
-      "Reuse.Tests/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "DevDefined.OAuth": "0.2.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.9",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.9",
-          "Microsoft.EntityFrameworkCore": "7.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9"
-        },
-        "compile": {
-          "bin/placeholder/Reuse.Tests.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Reuse.Tests.dll": {}
-        }
       }
     }
   },
@@ -4337,11 +4320,6 @@
       "type": "project",
       "path": "../Reuse.DAL/Reuse.DAL.csproj",
       "msbuildProject": "../Reuse.DAL/Reuse.DAL.csproj"
-    },
-    "Reuse.Tests/1.0.0": {
-      "type": "project",
-      "path": "../Reuse.Tests/Reuse.Tests.csproj",
-      "msbuildProject": "../Reuse.Tests/Reuse.Tests.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4356,7 +4334,6 @@
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.9",
       "Reuse.Bll >= 1.0.0",
       "Reuse.DAL >= 1.0.0",
-      "Reuse.Tests >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -4366,11 +4343,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MyWorkSpace\\ReuseProject\\ReuseProject\\ReuseProject.csproj",
+      "projectUniqueName": "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\ReuseProject\\ReuseProject.csproj",
       "projectName": "ReuseProject",
-      "projectPath": "C:\\MyWorkSpace\\ReuseProject\\ReuseProject\\ReuseProject.csproj",
+      "projectPath": "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\ReuseProject\\ReuseProject.csproj",
       "packagesPath": "C:\\Users\\suman\\.nuget\\packages\\",
-      "outputPath": "C:\\MyWorkSpace\\ReuseProject\\ReuseProject\\obj\\",
+      "outputPath": "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\ReuseProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\suman\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4381,20 +4358,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\MyWorkSpace\\ReuseProject\\Reuse.Bll\\Reuse.Bll.csproj": {
-              "projectPath": "C:\\MyWorkSpace\\ReuseProject\\Reuse.Bll\\Reuse.Bll.csproj"
+            "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.Bll\\Reuse.Bll.csproj": {
+              "projectPath": "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.Bll\\Reuse.Bll.csproj"
             },
-            "C:\\MyWorkSpace\\ReuseProject\\Reuse.DAL\\Reuse.DAL.csproj": {
-              "projectPath": "C:\\MyWorkSpace\\ReuseProject\\Reuse.DAL\\Reuse.DAL.csproj"
-            },
-            "C:\\MyWorkSpace\\ReuseProject\\Reuse.Tests\\Reuse.Tests.csproj": {
-              "projectPath": "C:\\MyWorkSpace\\ReuseProject\\Reuse.Tests\\Reuse.Tests.csproj"
+            "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.DAL\\Reuse.DAL.csproj": {
+              "projectPath": "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.DAL\\Reuse.DAL.csproj"
             }
           }
         }

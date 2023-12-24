@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MyWorkSpace\\ReuseProject\\Reuse.DAL\\Reuse.DAL.csproj": {}
+    "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.DAL\\Reuse.DAL.csproj": {}
   },
   "projects": {
-    "C:\\MyWorkSpace\\ReuseProject\\Reuse.DAL\\Reuse.DAL.csproj": {
+    "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.DAL\\Reuse.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyWorkSpace\\ReuseProject\\Reuse.DAL\\Reuse.DAL.csproj",
+        "projectUniqueName": "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.DAL\\Reuse.DAL.csproj",
         "projectName": "Reuse.DAL",
-        "projectPath": "C:\\MyWorkSpace\\ReuseProject\\Reuse.DAL\\Reuse.DAL.csproj",
+        "projectPath": "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.DAL\\Reuse.DAL.csproj",
         "packagesPath": "C:\\Users\\suman\\.nuget\\packages\\",
-        "outputPath": "C:\\MyWorkSpace\\ReuseProject\\Reuse.DAL\\obj\\",
+        "outputPath": "C:\\MyWorkSpace\\Forestry\\Forestry-Reporting-System-Reuse-\\Reuse.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\suman\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
