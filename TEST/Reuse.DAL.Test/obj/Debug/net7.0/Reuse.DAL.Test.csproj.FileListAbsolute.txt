@@ -8,9 +8,13 @@ C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Reuse.DAL.Test.runtimeconfig.json
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Reuse.DAL.Test.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Reuse.DAL.Test.pdb
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\AutoFixture.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Azure.Core.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Azure.Identity.dll
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Castle.Core.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\DevDefined.OAuth.dll
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Fare.dll
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\FluentAssertions.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -42,6 +46,7 @@ C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Microsoft.TestPlatform.Utilities.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Moq.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\NuGet.Frameworks.dll
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
@@ -146,8 +151,3 @@ C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\obj
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\obj\Debug\net7.0\Reuse.DAL.Test.pdb
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\obj\Debug\net7.0\Reuse.DAL.Test.genruntimeconfig.cache
 C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\obj\Debug\net7.0\ref\Reuse.DAL.Test.dll
-C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\AutoFixture.dll
-C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Castle.Core.dll
-C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Fare.dll
-C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\FluentAssertions.dll
-C:\MyWorkSpace\Forestry\Forestry-Reporting-System-Reuse-\TEST\Reuse.DAL.Test\bin\Debug\net7.0\Moq.dll

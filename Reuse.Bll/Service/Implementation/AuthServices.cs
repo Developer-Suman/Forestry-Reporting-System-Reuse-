@@ -291,6 +291,7 @@ namespace Reuse.Bll.Service.Implementation
                     Email = entity.Email,
                     SecurityStamp = Guid.NewGuid().ToString(),
                     UserName = entity.Username,
+              
                     PhoneNumber = entity.PhoneNumber,
                     BranchId = entity.BranchId,
                     IsActive = true
