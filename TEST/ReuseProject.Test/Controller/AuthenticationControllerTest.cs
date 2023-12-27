@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 using Reuse.Bll.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace ReuseProject.Test.Controller
 {
@@ -44,12 +45,15 @@ namespace ReuseProject.Test.Controller
 
             //Assert
             result.Should().NotBeNull();
-            result.Should().BeAssignableTo<ActionResult>();
+            result.Should().BeAssignableTo<IActionResult>();
+
+            result.Should().BeAssignableTo<ObjectResult>();
 
 
-            result.Should().BeAssignableTo<OkObjectResult>();
+            result.Should().BeOfType<ObjectResult>()
+      .Which.Value.Should().NotBeNull().And.BeOfType<TokenDTO>();
 
-            result.As<ObjectResult>().Value.Should().NotBeNull().And.BeOfType(result.GetType());
+            result.Should().BeAssignableTo<CreatedAtRouteResult>();
             
 
             _serviceMock.Verify(x => x.LoginService(request), Times.Never());
@@ -58,6 +62,7 @@ namespace ReuseProject.Test.Controller
 
         }
 
+        [Fact]
         public async Task GetErrorMessageForLogin_ShouldReturnStatus500InternalServerError_WhenLoginFailed()
         {
             //Arrange
@@ -77,7 +82,7 @@ namespace ReuseProject.Test.Controller
             _serviceMock.Verify(x=>x.LoginService(request), Times.Never());
 
         }
-
+        [Fact]
 
         public async Task GetRegisteredMessage_ShouldReturnStatus200OK_WhenRegisteredSuccessfully()
         {
@@ -100,7 +105,7 @@ namespace ReuseProject.Test.Controller
         }
 
 
-
+        [Fact]
         public async Task GetErrorMessageForRegistered_ShouldReturnStatus500InternalServerError_WhenRegisteredFailes()
         {
             //Arrange
@@ -121,10 +126,143 @@ namespace ReuseProject.Test.Controller
 
         }
 
-
-        public async Task GetAllUser_ShouldReturnStatus200OK_WhenDataFound()
+        [Fact]
+        public async Task GetAllUser_ShouldReturnStatus200OK_WhenResultSuccess()
         {
+            //Arrange
+            var response = _fixture.Create<ServiceResult<List<UserDTO>>>();
+            _serviceMock.Setup(x => x.GetAllUsers()).ReturnsAsync(response);
+
+            //Act
+            var result = _sut.GetAllUsers().ConfigureAwait(false);
+
+            //Assert
+            result.Should().NotBeNull();
+            result.Should().BeAssignableTo<IActionResult>();
+            result.Should().BeAssignableTo<OkObjectResult>();
+            result.As<OkObjectResult>().Value.Should().NotBeNull().And.BeOfType(response.GetType());
+            _serviceMock.Verify(x=>x.GetAllUsers(), Times.Never());
+
 
         }
+
+        [Fact]
+        public async Task GetAllUser_ShouldReturnStatus500InternalServerError_WhenResultNotSuccess()
+        {
+            //Arrange
+            ServiceResult<List<UserDTO>> response = null;
+            _serviceMock.Setup(x => x.GetAllUsers()).ReturnsAsync(response);
+
+            //Act
+            var result = await _sut.GetAllUsers().ConfigureAwait(false);
+
+            //Assert
+            result.Should().NotBeNull();
+            result.Should().BeAssignableTo<NotFoundResult>();
+            _serviceMock.Verify(x => x.GetAllUsers(), Times.Once());
+
+        }
+
+        [Fact]
+        public async Task GetUserByBranchId_ShouldReturnStatus200OK_WhenValidinput()
+        {
+            //Arrange
+            var response = _fixture.Create<ServiceResult<List<UserDTO>>>();
+            var id = _fixture.Create<int>();
+
+            _serviceMock.Setup(x => x.GetUserByBranchId(id)).ReturnsAsync(response);
+
+            //Act
+            var result = _sut.GetUserByBranchId(id).ConfigureAwait(false);
+
+            //Assert
+            result.Should().NotBeNull();
+            result.Should().BeAssignableTo<IActionResult>();
+            result.Should().BeAssignableTo<OkObjectResult>();
+            result.As<OkObjectResult>().Value.Should().NotBeNull().And.BeOfType(response.GetType());
+
+            _serviceMock.Verify(x=>x.GetUserByBranchId(id), Times.Once());
+        }
+
+        [Fact]
+        public async Task GetUserByBranchId_ShouldReturnStatus500InternalServerError_WhenNoDataFound()
+        {
+            //Arrange
+            ServiceResult<List<UserDTO>> response = null;
+            var id = _fixture.Create<int>();
+            _serviceMock.Setup(x => x.GetUserByBranchId(id)).ReturnsAsync(response);
+
+            //Act
+
+            var result = await _sut.GetUserByBranchId(id).ConfigureAwait(false);
+
+            //Assert
+            result.Should().NotBeNull();
+            result.Should().BeAssignableTo<NotFoundResult>();
+            _serviceMock.Verify(x => x.GetUserByBranchId(id), Times.Once());
+        }
+
+        [Fact]
+        public async Task GetUserByBranchId_ShouldReturnStatus500InternalServerError_WhenResultSuccessIsFalse()
+        {
+            //Arrange 
+            var response = _fixture.Create<ServiceResult<List<UserDTO>>>();
+            var id = _fixture.Create<int>();
+
+            _serviceMock.Setup(x => x.GetUserByBranchId(id)).ReturnsAsync(response);
+
+
+            //Act
+            var result = await _sut.GetUserByBranchId(id).ConfigureAwait(false);
+
+            //Assert
+
+            result.Should().NotBeNull();
+            result.As<ObjectResult>().StatusCode.Should().Be(StatusCodes.Status500InternalServerError);
+            _serviceMock.Verify(x => x.GetUserByBranchId(id), Times.Once());
+        }
+
+        [Fact]
+        public async Task UpdateUser_ShouldReturnBadResponse_WhenResultIsSuucess()
+        {
+            //Arrange
+            int id = 0;
+            var request = _fixture.Create<UserDTO>();
+            var expectedResult = _fixture.Create<ServiceResult<UserDTO>>();
+            _serviceMock.Setup(x => x.UpdateUser(request)).ReturnsAsync(expectedResult);
+        
+
+            //Act
+            var result = await _sut.UpdateUser(request).ConfigureAwait(false);
+
+            //Assert
+            request.Should().NotBeNull();
+            request.Should().BeAssignableTo<BadRequest>();
+            request.As<ObjectResult>().StatusCode.Should().Be(StatusCodes.Status500InternalServerError);
+            _serviceMock.Verify(x=>x.UpdateUser(request), Times.Never());
+
+        }
+
+        [Fact]
+        public async Task UpdateUser_ShouldReturnStatus500InternalServerError_WhenUpdateResultFailed()
+        {
+            //Arrange
+            var id = _fixture.Create<int>();
+            var request = _fixture.Create<UserDTO>();
+            var expectedResult = new ServiceResult<UserDTO>(false);
+            _sut.ModelState.AddModelError("Subject", "The Subject field is required");
+            _serviceMock.Setup(x=>x.UpdateUser(request)).ReturnsAsync(expectedResult);
+
+            //Act
+            var result = await _sut.UpdateUser(request).ConfigureAwait(false);
+
+            //Assert
+            result.Should().NotBeNull();
+            result.Should().BeAssignableTo<BadRequestResult>();
+            _serviceMock.Verify(x => x.UpdateUser(request), Times.Never());
+        }
+
+
+
     }
 }
