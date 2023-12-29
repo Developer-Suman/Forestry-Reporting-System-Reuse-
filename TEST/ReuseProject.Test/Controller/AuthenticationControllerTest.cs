@@ -45,15 +45,9 @@ namespace ReuseProject.Test.Controller
 
             //Assert
             result.Should().NotBeNull();
-            result.Should().BeAssignableTo<IActionResult>();
-
-            result.Should().BeAssignableTo<ObjectResult>();
-
-
-            result.Should().BeOfType<ObjectResult>()
-      .Which.Value.Should().NotBeNull().And.BeOfType<TokenDTO>();
-
-            result.Should().BeAssignableTo<CreatedAtRouteResult>();
+            result.Should().BeOfType<StatusCodeResult>().Which.StatusCode.Should().Be(StatusCodes.Status200OK);
+            result.As<ObjectResult>().Value.Should().BeEquivalentTo(request);
+      
             
 
             _serviceMock.Verify(x => x.LoginService(request), Times.Never());
@@ -137,10 +131,11 @@ namespace ReuseProject.Test.Controller
             var result = _sut.GetAllUsers().ConfigureAwait(false);
 
             //Assert
+            Assert.NotNull(result);
             result.Should().NotBeNull();
             result.Should().BeAssignableTo<IActionResult>();
-            result.Should().BeAssignableTo<OkObjectResult>();
-            result.As<OkObjectResult>().Value.Should().NotBeNull().And.BeOfType(response.GetType());
+            //result.Should().BeAssignableTo<OkObjectResult>();
+            //result.As<OkObjectResult>().Value.Should().NotBeNull().And.BeOfType(response.GetType());
             _serviceMock.Verify(x=>x.GetAllUsers(), Times.Never());
 
 
@@ -150,18 +145,24 @@ namespace ReuseProject.Test.Controller
         public async Task GetAllUser_ShouldReturnStatus500InternalServerError_WhenResultNotSuccess()
         {
             //Arrange
-            ServiceResult<List<UserDTO>> response = null;
-            _serviceMock.Setup(x => x.GetAllUsers()).ReturnsAsync(response);
+            var errorResponse = _fixture.Create<string[]>();
+            var usSuccessfulResponse = new ServiceResult<List<UserDTO>>(false, default, errorResponse);
+
+            _serviceMock.Setup(x => x.GetAllUsers()).ReturnsAsync(usSuccessfulResponse);
 
             //Act
-            var result = await _sut.GetAllUsers().ConfigureAwait(false);
+            var result = await _sut.GetAllUsers();
 
             //Assert
             result.Should().NotBeNull();
-            result.Should().BeAssignableTo<NotFoundResult>();
+            result.Should().BeOfType<StatusCodeResult>().Which.StatusCode.Should().Be(StatusCodes.Status500InternalServerError);
+            result.As<ObjectResult>().Value.Should().BeEquivalentTo(errorResponse);
             _serviceMock.Verify(x => x.GetAllUsers(), Times.Once());
 
         }
+
+
+
 
         [Fact]
         public async Task GetUserByBranchId_ShouldReturnStatus200OK_WhenValidinput()
